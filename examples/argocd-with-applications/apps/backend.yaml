@@ -9,9 +9,9 @@
     "server": "https://kubernetes.default.svc"
   "project": "default"
   "source":
-    "repoURL": "https://github.com/trnsprntt/internship_devops_infrastructure/tree/main/helm/"
+    "repoURL": "https://github.com/trnsprntt/internship_devops_infrastructure.git"
     "targetRevision": "HEAD" 
-    "chart": "backend"
+    "path": "helm/backend"
     "helm":
       "parameters":
       - "name": "aws.region"
