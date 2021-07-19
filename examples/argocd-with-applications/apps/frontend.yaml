@@ -9,7 +9,9 @@
     "server": "https://kubernetes.default.svc"
   "project": "default"
   "source":
-    "chart": "frontend"
+    "repoURL": "https://github.com/trnsprntt/internship_devops_infrastructure.git"
+    "targetRevision": "HEAD" 
+    "path": "helm/frontend"
     "helm":
       "parameters":
       - "name": "aws.region"
