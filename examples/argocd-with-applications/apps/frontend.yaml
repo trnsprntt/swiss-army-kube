@@ -24,7 +24,7 @@
         "value": "300Mi"
       - "name": "serviceAccount.annotations.eks\\.amazonaws\\.com/role-arn"
         "value": "arn:aws:iam::245582572290:role/weather_external-dns"
-    "repoURL": "https://github.com/trnsprntt/internship_devops_infrastructure/tree/main/helm"
+    "repoURL": "https://github.com/trnsprntt/internship_devops_infrastructure/tree/main/helm/"
     "targetRevision": "0.1.0"
   "syncPolicy":
     "automated":
