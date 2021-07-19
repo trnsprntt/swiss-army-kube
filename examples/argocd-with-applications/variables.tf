@@ -1,23 +1,23 @@
 variable "cluster_name" {
-  default     = "swiss-army"
+  default     = "weather"
   type        = string
   description = "A name of the Amazon EKS cluster"
 }
 
 variable "region" {
-  default     = "eu-central-1"
+  default     = "us-west-2"
   type        = string
   description = "Set default region"
 }
 
 variable "availability_zones" {
-  default     = ["eu-central-1a", "eu-central-1b"]
+  default     = ["us-west-2a", "us-west-2b"]
   type        = list(any)
   description = "Availability zones for project, minimum 2"
 }
 
 variable "zone_id" {
-  default     = ""
+  default     = "Z02149423PVQ0YMP19F13"
   type        = string
   description = "Default zone id for root domain" #like Z04917561CQAI9UAF27D6
 }
@@ -29,13 +29,13 @@ variable "environment" {
 }
 
 variable "project" {
-  default     = "SWISSARMY"
+  default     = "WEATHER"
   type        = string
   description = "A value that will be used in annotations and tags to identify resources with the `Project` key"
 }
 
 variable "domain_name" {
-  default     = "sak.ninja"
+  default     = "trnsprntt.sak.ninja"
   type        = string
   description = "Default domain name"
 }
@@ -45,7 +45,7 @@ variable "argocd" {
   default = {
     repository = "swiss-army-kube"
     branch     = "master"
-    owner      = "provectus"
+    owner      = "trnsprntt"
   }
   type        = map(string)
   description = "A set of values for enabling deployment through ArgoCD"
