@@ -5,7 +5,7 @@
   "namespace": "argocd"
 "spec":
   "destination":
-    "namespace": "frontend"
+    "namespace": "weather"
     "server": "https://kubernetes.default.svc"
   "project": "default"
   "source":
